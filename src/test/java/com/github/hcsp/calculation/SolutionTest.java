@@ -8,31 +8,31 @@ class SolutionTest {
     @Test
     public void test() {
         assertTrue(
-                IntStream.range('0', '9' + 1)
+                java.util.stream.IntStream.range('0', '9' + 1)
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('A', 'G')
+                java.util.stream.IntStream.range('A', 'G')
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('a', 'g' + 1)
+                java.util.stream.IntStream.range('a', 'g' + 1)
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('g', 'z')
+                java.util.stream.IntStream.range('g', 'z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('G', 'Z')
+                java.util.stream.IntStream.range('G', 'Z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('g', 'z')
+                java.util.stream.IntStream.range('g', 'z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
         assertTrue(
-                IntStream.range('!', 'A')
+                java.util.stream.IntStream.range('!', 'A')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
     }
