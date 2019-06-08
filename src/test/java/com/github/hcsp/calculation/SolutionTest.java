@@ -16,7 +16,7 @@ class SolutionTest {
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
         assertTrue(
-                java.util.stream.IntStream.range('a', 'g' + 1)
+                java.util.stream.IntStream.range('a', 'g')
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
         assertTrue(
@@ -32,7 +32,7 @@ class SolutionTest {
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
         assertTrue(
-                java.util.stream.IntStream.range('!', 'A')
+                java.util.stream.IntStream.range('!', '0')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
     }
