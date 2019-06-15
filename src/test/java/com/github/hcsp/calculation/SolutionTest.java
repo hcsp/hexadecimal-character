@@ -1,6 +1,6 @@
 package com.github.hcsp.calculation;
 
-import java.util.Stream.IntStream;
+import java.util.stream.IntStream;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
