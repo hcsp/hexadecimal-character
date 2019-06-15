@@ -1,38 +1,38 @@
 package com.github.hcsp.calculation;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
+import java.util.Stream.IntStream;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-class SolutionTest {
+public class SolutionTest {
     @Test
     public void test() {
-        assertTrue(
-                java.util.stream.IntStream.range('0', '9' + 1)
+        Assertions.assertTrue(
+                IntStream.range('0', '9' + 1)
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('A', 'G')
+        Assertions.assertTrue(
+                IntStream.range('A', 'G')
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('a', 'g')
+        Assertions.assertTrue(
+                IntStream.range('a', 'g')
                         .mapToObj(i -> (char) i)
                         .allMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('g', 'z')
+        Assertions.assertTrue(
+                IntStream.range('g', 'z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('G', 'Z')
+        Assertions.assertTrue(
+                IntStream.range('G', 'Z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('g', 'z')
+        Assertions.assertTrue(
+                IntStream.range('g', 'z')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
-        assertTrue(
-                java.util.stream.IntStream.range('!', '0')
+        Assertions.assertTrue(
+                IntStream.range('!', '0')
                         .mapToObj(i -> (char) i)
                         .noneMatch(Solution::isValidHexCharacter));
     }
