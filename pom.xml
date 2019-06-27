@@ -20,6 +20,12 @@
     </repositories>
     <dependencies>
         <dependency>
+            <groupId>com.github.hcsp</groupId>
+            <artifactId>test-helpers</artifactId>
+            <version>0.2</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.4.2</version>
