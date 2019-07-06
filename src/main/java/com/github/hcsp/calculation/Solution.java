@@ -11,6 +11,6 @@ public class Solution {
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
     public static boolean isValidHexCharacter(char ch) {
         ch = Character.isDigit(ch)? ch : Character.toUpperCase(ch);
-        return (int)ch >= 48 && (int)ch <= 70 ? true: false;
+        return  ch >= '0' && ch <= 'F';
     }
 }
