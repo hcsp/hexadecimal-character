@@ -1,8 +1,5 @@
 package com.github.hcsp.calculation;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Solution {
     public static void main(String[] args) {
         System.out.println("A是合法的十六进制字符:" + isValidHexCharacter('A'));
@@ -12,10 +9,5 @@ public class Solution {
 
     // 一个合法的十六进制的字符是：字符0-9，以及字符A/a/B/b/C/c/D/d/E/e/F/f （大小写都是合法的）
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
-    public static boolean isValidHexCharacter(char ch) {
-    	String s = new String(new char[]{ch});
-	    Pattern p = Pattern.compile("[0-9a-fA-F]");
-	    Matcher matcher = p.matcher(s);
-	    return matcher.find();
-    }
+    public static boolean isValidHexCharacter(char ch) {}
 }
