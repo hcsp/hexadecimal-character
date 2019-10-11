@@ -10,10 +10,12 @@ public class Solution {
     // 一个合法的十六进制的字符是：字符0-9，以及字符A/a/B/b/C/c/D/d/E/e/F/f （大小写都是合法的）
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
     public static boolean isValidHexCharacter(char ch) {
-        if((ch >= 48 && ch <= 57) || (ch >= 65 && ch <= 70) || (ch >= 97 && ch <= 102)){
+        if(ch >= 48 && ch <= 57)
             return true;
-        } else {
-            return false;
-        }
+        if(ch >= 65 && ch <= 70)
+            return true;
+        if (ch >= 97 && ch <= 102)
+            return true;
+        return false;
     }
 }
