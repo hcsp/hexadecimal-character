@@ -9,5 +9,14 @@ public class Solution {
 
     // 一个合法的十六进制的字符是：字符0-9，以及字符A/a/B/b/C/c/D/d/E/e/F/f （大小写都是合法的）
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
-    public static boolean isValidHexCharacter(char ch) {}
+    public static boolean isValidHexCharacter(char ch) {
+        int chAscii = Integer.valueOf(ch);
+        int zeroChAscii = Integer.valueOf('0');
+        int nineChAscii = Integer.valueOf('9');
+        int AChAscii = Integer.valueOf('A');
+        int FChAscii = Integer.valueOf('F');
+        int aChAscii = Integer.valueOf('a');
+        int fChAscii = Integer.valueOf('f');
+        return (chAscii >= zeroChAscii && chAscii <= nineChAscii) || (chAscii >= AChAscii && chAscii <= FChAscii) || (chAscii >= aChAscii && chAscii <= fChAscii);
+    }
 }
