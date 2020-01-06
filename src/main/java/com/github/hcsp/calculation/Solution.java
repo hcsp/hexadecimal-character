@@ -12,7 +12,6 @@ public class Solution {
     public static boolean isValidHexCharacter(char ch) {
         if(((int)ch>=48)&&((int)ch<=57)){return true;}
         else if(((int)ch>=65)&&((int)ch<=70)){return true;}
-        else if(((int)ch>=97)&&((int)ch<=102)){return true;}
-        else{return false;}
+        else return ((int) ch >= 97) && ((int) ch <= 102);
     }
 }
