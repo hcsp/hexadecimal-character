@@ -11,7 +11,8 @@ public class Solution {
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
     public static boolean isValidHexCharacter(char ch) {
         //判断ch是否在0与9之间  或者 a与f之间  或者A与F之间
-        return (ch > 0 && ch < 9) || (ch >= 'a' && ch <= 'f') || (ch >= 'A' && ch <= 'F');
+        return (ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'f') || (ch >= 'A' && ch <= 'F');
+
 
     }
 
