@@ -15,10 +15,10 @@ public class Solution {
     public static boolean isValidHexCharacter(char ch) {
         String ch1 = String.valueOf(ch);    //基本数据类型char转为String
         //创建String数组
-        String str[] = {"0","1","2","3","4","5","6","7","8","9","A","a","B","b","C","c","D","d","E","e","F","f","G","g"};
+        String str[] = {"0","1","2","3","4","5","6","7","8","9","A","a","B","b","C","c","D","d","E","e","F","f"};
         //将String数组转为List
         List<String> list= Arrays.asList(str);
-        //通过contains来判断
+        //通过contains来判断是否存在
         if(list.contains(ch1)){
             return true;
         }else {
