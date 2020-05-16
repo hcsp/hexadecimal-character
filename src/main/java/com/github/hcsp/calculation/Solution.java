@@ -12,10 +12,13 @@ public class Solution {
     public static boolean isValidHexCharacter(char ch) {
 //        48-57 , 65-70 ,97-102
         int n = (int) ch;
-        if ((n >= 48 && n <= 57) || (n >= 65 && n <= 70) || (n >= 97 && n <= 102)){
+        if ((n >= 48 && n <= 57)){
             return true;
-        }else {
-            return false;
+        } else if (n >= 65 && n <= 70){
+            return true;
+        } else if (n >= 97 && n <= 102){
+            return true;
         }
+        return false;
     }
 }
