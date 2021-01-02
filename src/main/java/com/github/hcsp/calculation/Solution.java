@@ -1,7 +1,5 @@
 package com.github.hcsp.calculation;
 
-import jdk.nashorn.internal.runtime.regexp.joni.Regex;
-
 public class Solution {
     public static void main(String[] args) {
         System.out.println("A是合法的十六进制字符:" + isValidHexCharacter('A'));
