@@ -1,8 +1,5 @@
 package com.github.hcsp.calculation;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
 public class Solution {
     public static void main(String[] args) {
         System.out.println("A是合法的十六进制字符:" + isValidHexCharacter('A'));
