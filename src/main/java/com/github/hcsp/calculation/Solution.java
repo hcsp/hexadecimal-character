@@ -2,7 +2,7 @@ package com.github.hcsp.calculation;
 
 public class Solution {
     public static void main(String[] args) {
-        System.out.println("A是合法的十六进制字符:" + isValidHexCharacter('A');
+        System.out.println("A是合法的十六进制字符:" + isValidHexCharacter('A'));
         System.out.println("0是合法的十六进制字符:" + isValidHexCharacter('0'));
         System.out.println("G是合法的十六进制字符:" + isValidHexCharacter('G'));
     }
