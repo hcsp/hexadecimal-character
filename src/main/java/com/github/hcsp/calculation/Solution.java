@@ -14,10 +14,6 @@ public class Solution {
             return true;
         } else if (ch >= 0x41 && ch <= 0x46) {
             return true;
-        } else if (ch >= 0x61 && ch <= 0x66) {
-            return true;
-        } else {
-            return false;
-        }
+        } else return ch >= 0x61 && ch <= 0x66;
     }
 }
