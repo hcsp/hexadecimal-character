@@ -12,47 +12,47 @@ public class Solution {
     public static boolean isValidHexCharacter(char ch) {
         if ( ch == 'A' ) {
             return true;
-        } else if ( ch == 'a' ) {
+        } else if ( ch == 'a' ){
             return true;
-        } else if ( ch == 'B' ) {
+        } else if ( ch == 'B' ){
             return true;
-        } else if ( ch == 'b' ) {
+        } else if ( ch == 'b' ){
             return true;
-        } else if ( ch == 'C' ) {
+        } else if ( ch == 'C' ){
             return true;
-        } else if ( ch == 'c' ) {
+        } else if ( ch == 'c' ){
             return true;
-        } else if ( ch == 'D' ) {
+        } else if ( ch == 'D' ){
             return true;
-        } else if ( ch == 'd' ) {
+        } else if ( ch == 'd' ){
             return true;
-        } else if ( ch == 'E' ) {
+        } else if ( ch == 'E' ){
             return true;
-        } else if ( ch == 'e' ) {
+        } else if ( ch == 'e' ){
             return true;
-        } else if ( ch == 'F' ) {
+        } else if ( ch == 'F' ){
             return true;
-        } else if ( ch == 'f' ) {
+        } else if ( ch == 'f' ){
             return true;
-        } else if ( ch == '0' ) {
+        } else if ( ch == '0' ){
             return true;
-        } else if ( ch == '1' ) {
+        } else if ( ch == '1' ){
             return true;
-        } else if ( ch == '2' ) {
+        } else if ( ch == '2' ){
             return true;
-        } else if ( ch == '3' ) {
+        } else if ( ch == '3' ){
             return true;
-        } else if ( ch == '4' ) {
+        } else if ( ch == '4' ){
             return true;
-        } else if ( ch == '5' ) {
+        } else if ( ch == '5' ){
             return true;
-        } else if ( ch == '6' ) {
+        } else if ( ch == '6' ){
             return true;
-        } else if ( ch == '7' ) {
+        } else if ( ch == '7' ){
             return true;
-        } else if ( ch == '8' ) {
+        } else if ( ch == '8' ){
             return true;
-        } else if ( ch == '9' ) {
+        } else if ( ch == '9' ){
             return true;
         }
         return false;
