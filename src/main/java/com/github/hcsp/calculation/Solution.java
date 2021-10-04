@@ -13,7 +13,7 @@ public class Solution {
         char[] charArray={'A','a','B','b','C','c','D','d','E','e','F','f','0'};
         Boolean result = null;
         for (int i = 0; i < charArray.length; i++) {
-            if (ch!=(charArray[i])) {
+            if (ch != (charArray[i])) {
                  result = false;
             } else {
                  result = true;
