@@ -11,10 +11,11 @@ public class Solution {
     // 编写一个方法，给定一个字符，若是合法的十六进制字符，返回true，否则返回false
     public static boolean isValidHexCharacter(char ch) {
         char[] charArray = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'A', 'b', 'B', 'c', 'C', 'd', 'D', 'e', 'E', 'f', 'F'};
-        for (char c : charArray)
+        for (char c : charArray) {
             if (ch == c) {
                 return true;
             }
+        }
         return false;
     }
 }
