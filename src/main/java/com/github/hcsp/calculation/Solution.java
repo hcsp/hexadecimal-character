@@ -15,7 +15,7 @@ public class Solution {
         }else {
             return false;
         } */
-        if ( ( ch >= 48 && ch <= 57) || ( ch >= 65 && ch <= 70) || ( ch >= 97 && ch <= 102)) {
+        if ( ( (ch >= 48) && (ch <= 57)) || ( (ch >= 65) && (ch <= 70)) || ( (ch >= 97) && (ch <= 102))) {
             return true;
         } else {
             return false;
